@@ -1,0 +1,82 @@
+.myCourse {
+  margin-top: $mg-2;
+  .course_content {
+    width: 80%;
+    margin: auto;
+    .col-md-4 {
+      background: #f7f8fa;
+      height: 300px;
+      margin-top: 4.3rem;
+      .course_intro {
+        padding-top: 7rem;
+        padding-left: 1rem;
+        padding-right: 0.2rem;
+        h2 {
+          @include text($color-black-0, $fs-2 - 1, $fw-bold-1);
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .myTab {
+      .nav {
+        justify-content: space-between;
+
+        .nav-item {
+          &:hover {
+            .nav-link {
+              border: none;
+            }
+          }
+          .nav-link.active {
+            border: none;
+            border-bottom: 5px solid $color-blue;
+          }
+          .nav-link {
+            @include text($color-black-0, $fs-0, $fw-normal);
+            border: none;
+          }
+        }
+      }
+
+      .tab-content {
+        margin-top: $mg-2;
+        position: relative;
+        .card {
+          height: 310px;
+          .card-title {
+            @include text($color-black-0, $fs-0, $fw-bold);
+          }
+          .card-text {
+            @include text($color-gray-4, $fs-1, $fw-normal);
+          }
+          .rating {
+            display: flex;
+            .rating_star {
+              @include text($color-yellow, $fs-1, $fw-normal);
+              margin-right: $mg-0;
+            }
+            span:nth-child(2) {
+              @include text($color-gray-4, $fs-1, $fw-bold);
+              margin-right: $mg-0;
+            }
+            span:last-child {
+              @include text($color-gray-4, $fs-1, $fw-normal);
+            }
+          }
+          .price {
+            .old-price {
+              @include text($color-gray-4, $fs-1, $fw-normal);
+              text-decoration: line-through;
+            }
+            .new-price {
+              @include text($color-black-0, $fs-0, $fw-bold);
+            }
+          }
+        }
+      }
+    }
+  }
+}

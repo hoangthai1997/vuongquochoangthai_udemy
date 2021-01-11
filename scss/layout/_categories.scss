@@ -1,0 +1,31 @@
+.myCategories {
+  box-sizing: border-box;
+  margin-left: 6rem;
+  h1 {
+    font-size: 24px;
+    color: #29303b;
+    font-weight: 700;
+  }
+  p {
+    font-size: 15px;
+    color: #14171c;
+  }
+  .categories_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+    .categories_item {
+      display: flex;
+      width: 25%;
+      padding: 15px;
+      i {
+        padding-right: 1.5rem;
+      }
+      p {
+        font-size: 15px;
+        color: #14171c;
+      }
+    }
+  }
+}

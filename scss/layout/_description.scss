@@ -1,0 +1,30 @@
+.myDescription {
+    background: #f2f3f5;
+    padding-bottom: 2rem;
+  .description_container {
+      display: flex;
+      padding: 0 15px;
+      margin: 0 183px;
+      padding-top: 2rem;
+      
+    .description_item{
+      display: flex;
+        background: #ffffff;
+        margin: 0px 16px 0px 0px;
+        padding: 24px;
+        width: 364px;
+        i{
+          padding-right: 1rem;
+          padding-top: 0.3rem;
+        }
+        h1{
+            font-size: $fs-2 - 1;
+            color: #29303b;
+        }
+        p{
+            font-size: $fs-0 + 1;
+            color: #686f7a;
+        }
+    }
+  }
+}

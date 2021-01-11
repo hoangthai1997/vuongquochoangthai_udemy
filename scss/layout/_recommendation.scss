@@ -1,0 +1,32 @@
+.myRecommendation{
+    .recommendation_container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        margin-bottom: 3rem;
+        background-color: $color-black-0;
+        color: $color-white-0;
+        h1{
+            font-size: 24px;
+            font-weight: 700;
+            color: #f7f8fa;
+            margin: 0 0 16px;
+        }
+        p{
+            font-size: 15px;
+            color: #f7f8fa;
+            margin: 0 0 16px;
+        }
+        button{
+            font-size: 15px;
+            padding: 11px 12px;
+            background: #ec5252;
+            color: #ffffff;
+            border: none;
+        }
+    }
+}
